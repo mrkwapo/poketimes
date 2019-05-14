@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className='navbar-wrapper red darken-3'>
@@ -7,13 +7,13 @@ const Navbar = () => {
         <a className='brand-logo'>Poke' Times</a>
         <ul className='right'>
           <li>
-            <a href='/'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='/about'>About</a>
+            <NavLink to='/about'>About</NavLink>
           </li>
           <li>
-            <a href='/contact'>Contact</a>
+            <NavLink to='/contact'>Contact</NavLink>
           </li>
         </ul>
       </div>
